@@ -1,5 +1,5 @@
-# node
-/node_modules
-
-# macos
+node_modules
 .DS_Store
+dist
+dist-ssr
+*.local
