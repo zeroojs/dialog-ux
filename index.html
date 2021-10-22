@@ -5,32 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modal</title>
+  <title>Dialog</title>
   <link rel="stylesheet" href="./style/index.css">
-  <link rel="stylesheet" href="./style/modal.css">
+  <link rel="stylesheet" href="./style/dialog.css">
 </head>
 
 <body>
   <div class="app-container">
-    <button class="open-modal-button">打开弹窗</button>
+    <button class="open-dialog-button">打开弹窗</button>
 
-    <div class="modal">
+    <div class="dialog" style="display:none">
 
       <!-- 不透明遮罩 -->
-      <div class="modal-mask"></div>
+      <div class="dialog-modal"></div>
 
       <!-- 内容区 -->
-      <div class="modal-main">
+      <div class="dialog-main">
 
-        <div class="modal-head">
-          <button class="modal-close-button icon-botton">x</button>
+        <div class="dialog-head">
+          <button class="dialog-close-button icon-botton">x</button>
         </div>
 
-        <div class="modal-body">
+        <div class="dialog-body">
           <img src="./img.svg" alt="">
           <p>听说这个按钮很神奇！</p>
-          <div><button class="modal-close-button">一键三连</button></div>
-          <div><button class="modal-close-button text-button">关闭弹窗</button></div>
+          <div><button class="dialog-close-button">一键三连</button></div>
+          <div><button class="dialog-close-button text-button">关闭弹窗</button></div>
         </div>
 
       </div>

@@ -1,42 +1,34 @@
-function showModal(modal) {
-  modal = document.body.appendChild(modal)
+function showdialog(dialog) {
+  dialog.removeAttribute('style')
   const timer = setTimeout(() => {
-    modal.classList.add('is-show')
-    addListeners(modal)
+    dialog.classList.add('is-show')
     clearTimeout(timer)
   }, 20)
 }
 
-function closeModal(modal) {
-  modal.classList.remove('is-show')
+function closedialog(dialog) {
+  dialog.classList.remove('is-show')
   const timer = setTimeout(() => {
-    modal.remove()
+    dialog.setAttribute('style', 'display:none')
     clearTimeout(timer)
   }, 300)
 }
 
-function addListeners(modal) {
-  // close btns
-  const closeButtons = modal.querySelectorAll('.modal-close-button')
-  closeButtons.forEach(c => c.addEventListener('click', closeModal.bind(null, modal)))
-  // mask clicked close
-  const modalMask = modal.querySelector('.modal-mask')
-  modalMask.addEventListener('click', (e) => {
-    e.stopPropagation()
-    closeModal(modal)
-  })
-}
-
-function init() {
-  const modal = document.querySelector('.modal')
-  modal.remove()
-  return { modal }
-}
-
 function boostrap() {
-  const { modal } = init()
+  const dialog = document.querySelector('.dialog')
   // open btn
-  const openButton = document.querySelector('.open-modal-button')
-  openButton.addEventListener('click', showModal.bind(null, modal))
+  const openButton = document.querySelector('.open-dialog-button')
+  openButton.addEventListener('click', showdialog.bind(null, dialog))
+
+  // close btns
+  const closeButtons = dialog.querySelectorAll('.dialog-close-button')
+  closeButtons.forEach(c => c.addEventListener('click', closedialog.bind(null, dialog)))
+  
+  // mask clicked close
+  const dialogMask = dialog.querySelector('.dialog-modal')
+  dialogMask.addEventListener('click', (e) => {
+    e.stopPropagation()
+    closedialog(dialog)
+  })
 }
 boostrap()
