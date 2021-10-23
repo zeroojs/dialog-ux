@@ -8,13 +8,14 @@
     <!-- 不透明遮罩 -->
     <div class="dialog-modal" @click.self="closeDialog"></div>
 
-    <!-- 内容区 -->
+    <!-- 主体 -->
     <div class="dialog-main">
 
       <div class="dialog-head">
         <button class="button icon-botton" @click="closeDialog">x</button>
       </div>
-
+      
+      <!-- 内容区 -->
       <div class="dialog-body">
         <slot></slot>
       </div>
