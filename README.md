@@ -41,5 +41,5 @@ opacity：1 -> 0 | transform：Y：0 -> 10%
 display(none)：https://developer.mozilla.org/zh-CN/docs/Web/CSS/display#display_none  
 place-items：https://developer.mozilla.org/zh-CN/docs/Web/CSS/place-items  
 position：https://developer.mozilla.org/zh-CN/docs/Web/CSS/position  
-setTimeout：https://developer.mozilla.org/zh-CN/docs/Web/API/setTimeout
+setTimeout：https://developer.mozilla.org/zh-CN/docs/Web/API/setTimeout  
 媒体查询：https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media
