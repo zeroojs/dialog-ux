@@ -29,12 +29,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  visibility: hidden;
   opacity: 0;
   transition: 0.3s;
 }
 .dialog.is-show {
-  visibility: visible;
   opacity: 1;
 }
 .dialog.is-show .dialog-main {
