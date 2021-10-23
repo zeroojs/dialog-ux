@@ -1,4 +1,4 @@
-
+![logic](./doc/dialog-preview.jpg)
 
 ## 基本逻辑
 ![logic](./doc/dialog-logic.png)
